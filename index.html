@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let div = React.createElement(
+        "div",
+        {
+          id: "title",
+          style: {
+            boxShadow: "0 0 10px black",
+            padding: "20px",
+            textAlign: "center",
+            margin: "auto",
+            width: "400px",
+          },
+        },
+        [
+          React.createElement(
+            "div",
+            null,
+            React.createElement("img", {
+              src: "https://thumbs.dreamstime.com/b/young-female-professional-portrait-woman-44581511.jpg",
+              alt: "example image",
+              width: "40%",
+              height: "40%",
+              style: { borderRadius: "50%" },
+            })
+          ),
+
+          React.createElement(
+            "div",
+            null,
+            React.createElement("h1", null, "Alexandra Caulea")
+          ),
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "p",
+              null,
+              "I enjoy drinkink a cup of coffee every day"
+            )
+          ),
+
+          React.createElement(
+            "div",
+            null,
+
+            React.createElement(
+              "div",
+              {
+                style: {
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  textAlign: "center",
+                },
+              },
+              React.createElement(
+                "div",
+                null,
+                React.createElement(
+                  "span",
+                  {
+                    style: {
+                      color: "red",
+                      fontWeight: "bold",
+                      fontSize: "larger",
+                    },
+                  },
+                  " 172 "
+                ),
+                React.createElement("br"),
+                React.createElement("span", null, " POST ")
+              ),
+
+              React.createElement(
+                "div",
+                null,
+                React.createElement(
+                  "span",
+                  {
+                    style: {
+                      color: "red",
+                      fontWeight: "bold",
+                      fontSize: "larger",
+                    },
+                  },
+                  "47 "
+                ),
+                React.createElement("br"),
+                React.createElement("span", null, " FOLLOWERS ")
+              ),
+
+              React.createElement(
+                "div",
+                null,
+                React.createElement(
+                  "span",
+                  {
+                    style: {
+                      color: "red",
+                      fontWeight: "bold",
+                      fontSize: "larger",
+                    },
+                  },
+                  " 20 "
+                ),
+                React.createElement("br"),
+                React.createElement("span", null, " FOLLOWING ")
+              )
+            )
+          ),
+
+          React.createElement(
+            "div",
+            null,
+            React.createElement(
+              "button",
+              {
+                style: {
+                  borderRadius: "15%",
+                  width: "100px",
+                  margin: "10px",
+                  height: "40px",
+                  color: "white",
+                  fontWeight: "bold",
+                  backgroundColor: "red",
+                },
+              },
+              "FOLLOW"
+            ),
+            React.createElement(
+              "button",
+              {
+                style: {
+                  borderRadius: "15%",
+                  width: "100px",
+                  margin: "10px",
+                  height: "40px",
+                  color: "white",
+                  fontWeight: "bold",
+                  backgroundColor: "blue",
+                },
+              },
+              "MESSAGE"
+            )
+          ),
+        ]
+      );
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
